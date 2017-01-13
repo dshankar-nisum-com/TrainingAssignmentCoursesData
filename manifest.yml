@@ -1,0 +1,10 @@
+applications:
+- name: TrainingAssignmentCoursesData
+  memory: 1024M
+  health-check-type: port
+  stack: cflinuxfs2
+  buildpack: java_buildpack
+  domain: cfapps.io
+  env:
+    JBP_CONFIG_OPENJDK: 'version: 1.8.+'
+    SPRING_PROFILES_ACTIVE: development
